@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Schwab Bank Reconciler",
+  "description": "This extension adds bank register reconciliation.",
+  "version": "1.0",
+  "icons": {
+    "128": "Reconcile_128x128.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [{
+    "matches": ["https://client.schwab.com/Accounts/History/BankHistory.aspx*"],
+    "css": ["reconciler.css"],
+    "js": ["jquery-1.9.1.min.js","reconciler.js"]
+  }]
+}
