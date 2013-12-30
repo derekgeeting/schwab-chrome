@@ -36,3 +36,12 @@ $('.data-row').each(function(n,row) {
   });
 
 });
+
+//add Clear button
+var btn = $('<button style="position:absolute; top:0; left:0">Clear Register</button>');
+$('body').append(btn);
+btn.click( function() {
+  chrome.storage.sync.clear(function(){
+    location.reload();
+  });
+});
