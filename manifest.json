@@ -3,7 +3,7 @@
 
   "name": "Schwab Bank Reconciler",
   "description": "This extension adds bank register reconciliation.",
-  "version": "1.0",
+  "version": "1.1",
   "icons": {
     "128": "Reconcile_128x128.png"
   },
